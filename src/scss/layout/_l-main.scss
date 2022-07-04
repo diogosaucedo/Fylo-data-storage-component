@@ -1,0 +1,15 @@
+@use "../base/extends";
+.l-main {
+  @extend %u-display-flex, %u-justify-space-between, %u-align-end;
+  width: 92rem;
+
+  .c-info {
+    width: 54rem;
+    height: 15rem;
+  }
+
+  .c-panel {
+    width: 35rem;
+    height: 20rem;
+  }
+}

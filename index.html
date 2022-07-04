@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- About the project -->
+    <title>Fylo data storage component</title>
+    <meta name="author" content="Diogo F. Saucedo" />
+    <meta
+      name="description"
+      content="Frontend Mentor's “Fylo data storage component” challenge."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/main.css" type="text/css" />
+  </head>
+  <body>
+    <main class="l-main">
+      <div class="c-panel">
+        <figure class="c-panel__logo">
+          <img src="./assets/images/logo.svg" alt="Logo Fylo" />
+        </figure>
+        <div class="c-panel__actions">
+          <figure class="c-panel__image-container">
+            <img
+              src="./assets/images/icon-document.svg"
+              alt="Document logo"
+              class="c-panel__image"
+            />
+          </figure>
+          <figure class="c-panel__image-container">
+            <img
+              src="./assets/images/icon-folder.svg"
+              alt="Folder logo"
+              class="c-panel__image"
+            />
+          </figure>
+          <figure class="c-panel__image-container">
+            <img
+              src="./assets/images/icon-upload.svg"
+              alt="Upload logo"
+              class="c-panel__image"
+            />
+          </figure>
+        </div>
+      </div>
+      <div class="c-info">
+        <p class="c-info__used">
+          You’ve used <strong>815 GB</strong> of your storage
+        </p>
+        <div class="c-info__progress-bar">
+          <div class="c-info__progressed">
+            <div class="c-info__dot"></div>
+          </div>
+        </div>
+        <div class="c-info__range">
+          <span>0 GB</span>
+          <span>1000 GB</span>
+        </div>
+        <div class="c-info__message">
+          <p class="c-info__left">
+            <strong class="c-info__highlight">185</strong> GB Left
+          </p>
+          <div class="c-info__triangle"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+@use "../base/colors";
+@use "../base/extends";
+@use "../base/mixins";
+
+.c-info {
+  @extend %u-display-flex, %u-flex-direction-column, %u-justify-space-between;
+
+  position: relative;
+  padding: 4rem;
+  border-radius: 1rem;
+
+  background-color: colors.$dark-blue;
+
+  &__used {
+    @include mixins.custom-font(1.4rem, 400, colors.$pale-blue);
+  }
+
+  &__message {
+    @extend %u-display-flex, %u-flex-direction-column, %u-align-end;
+
+    position: absolute;
+    right: 4rem;
+    top: -30%;
+  }
+
+  &__left {
+    @extend %u-display-flex, %u-align-center, %u-justify-center;
+
+    width: 18rem;
+    height: 7rem;
+    border-radius: 1rem 1rem 0 1rem;
+
+    background-color: colors.$white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__triangle {
+    width: 0;
+    height: 0;
+    border-top: 10px solid colors.$white;
+    border-right: 10px solid colors.$white;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+  }
+
+  &__highlight {
+    @include mixins.custom-font(4rem, 700, colors.$very-dark-blue);
+
+    padding: 0 1rem;
+  }
+
+  &__progress-bar {
+    @extend %u-display-flex, %u-align-center;
+
+    height: 2rem;
+    border-radius: 1rem;
+
+    background-color: colors.$very-dark-blue;
+  }
+
+  &__progressed {
+    @extend %u-display-flex, %u-justify-end, %u-align-center;
+
+    width: 81.5%;
+    height: 1.6rem;
+    border-radius: 1rem;
+
+    background-image: linear-gradient(
+      90deg,
+      colors.$gradient-start,
+      colors.$gradient-end
+    );
+  }
+
+  &__dot {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+
+    background-color: colors.$pale-blue;
+  }
+
+  &__range {
+    @extend %u-display-flex, %u-justify-space-between;
+
+    @include mixins.custom-font(1.4rem, 400, colors.$pale-blue);
+  }
+}

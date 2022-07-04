@@ -1,0 +1,45 @@
+@media only screen and (max-width: 920px) {
+  body {
+    background-image: url(../../../../assets/images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .l-main {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 85%;
+    min-height: 37rem;
+
+    .c-info {
+      width: 100%;
+    }
+
+    .c-panel {
+      width: 100%;
+    }
+  }
+  .c-info {
+    align-items: center;
+
+    &__message {
+      position: absolute;
+      top: 80%;
+      right: unset;
+    }
+
+    &__left {
+      border-radius: 1rem;
+    }
+
+    &__triangle {
+      display: none;
+    }
+
+    &__progress-bar,
+    &__range {
+      width: 100%;
+    }
+  }
+}
